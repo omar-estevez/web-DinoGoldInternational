@@ -1,0 +1,80 @@
+@import '../../App';
+
+footer {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 90px;
+    div {
+        padding: 40px 7px;
+        align-self: center;
+        h3{
+            color: $white-color;
+            margin-bottom: 5px;
+        }
+        ul{
+            list-style: none;
+
+            h4{
+                color: $white-color;
+                &:hover{
+                    cursor: pointer;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .menu {
+        ul{
+            li{
+                display: flex;
+            }
+        }
+    }
+
+    .image {
+        text-align: center;
+        img {
+            width: 50%;
+        }
+    }
+
+    .social {
+        .social-media{
+            display: flex;
+            flex-direction: row;
+            color: $white-color;
+            .icon{
+                font-size: 35px;
+                margin: 0 12px;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $primary-color;
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        /*Mobile phones*/
+
+        grid-template-columns: repeat(1, 1fr);
+
+        div {
+            text-align: center;
+        }
+
+        .image {
+            display: none;
+        }
+    }
+}
+.copyright{
+    background-color: black;
+    h5{
+        color: $white-color;
+    }
+}

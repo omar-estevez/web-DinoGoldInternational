@@ -1,0 +1,99 @@
+@import '../../App';
+
+.services {
+    background-color: $white-color;
+    padding: 50px 95px;
+    text-align: center;
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 60px 25px;
+        column-gap: 30px;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+
+        .cards {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            place-self: center;
+            border-radius: 0 0 8px 8px;
+            box-shadow: 0px 1px 10px 0px $black-color;
+            transition: all .72s ease-in-out;
+
+            .card-image {
+                position: relative;
+                min-height: 300px;
+                // height: 100%;
+                width: 100%;
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                overflow: hidden;
+                transition: all .72s ease-in-out;
+                box-shadow: inset 1px 0px 5px 0px $black-color;
+
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    /* width: 100%; */
+                    height: 500px;
+                    right: -100%;
+                    left: 0;
+                    transform: skew(96deg);
+                    background: #fff;
+                    bottom: -83%;
+                    box-shadow: inset 1px 0px 5px 0px rgba(204, 204, 204, 0.72);
+                }
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+
+            .card-text {
+                margin-bottom: 12px;
+            }
+
+            &:hover {
+                transform: translateY(5px);
+            }
+        }
+    }
+
+    .phrase {
+        color: $primary-color;
+        transition: color 0.3s ease-in;
+
+        &:hover {
+            color: $gold-hover;
+        }
+    }
+
+    @media only screen and (max-width: 640px) {
+        /*Mobile phones*/
+
+        padding: 50px 45px;
+
+        .card-container {
+            padding: 60px 0px;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 30px;
+        }
+    }
+
+    @media only screen and (min-width: 641px) and (max-width: 1007px) {
+        /*Tablets*/
+
+        padding: 50px 45px;
+
+        .card-container {
+            padding: 60px 10px;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 30px;
+        }
+    }
+}

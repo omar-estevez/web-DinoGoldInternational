@@ -1,0 +1,189 @@
+@import '../../App';
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    border-radius: 0px 0px 100% 100%;
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 250px;
+        list-style: none;
+
+        li {
+            h4 {
+                text-decoration: none;
+                font-size: 32px;
+                color: $primary-color;
+                transition: color 0.3s ease-in;
+
+                &:hover {
+                    cursor: pointer;
+                    color: $gold-hover;
+                }
+            }
+
+            img {
+                width: 160px;
+            }
+
+            &:nth-child(1),
+            &:nth-child(5) {
+                position: relative;
+                top: 25%;
+            }
+
+            &:nth-child(2),
+            &:nth-child(4) {
+                position: relative;
+                top: 50%;
+            }
+        }
+    }
+
+    
+    &.scrolled {
+        background-color: black;
+        transition: background-color 200ms linear;
+    }
+
+    @media only screen and (max-width: 640px) {
+        /*Mobile phones*/
+
+        border-radius: 0;
+        justify-content: space-between;
+
+        &.scrolled {
+            height: 85px;
+        }
+
+        &.nav-visible {
+            background-color: black;
+            height: 100vh;
+            overflow-y: auto;
+            position: fixed;
+            transition: background-color 0.9s ease-in-out;
+        }
+
+        .logo {
+            position: absolute;
+            left: 2%;
+
+            img {
+                width: 100px;
+            }
+        }
+
+        .icon-menu {
+            position: absolute;
+            display: block;
+            color: $primary-color;
+            width: 50px;
+            height: 80px;
+            right: 2%;
+            transition: color 0.3s ease-in;
+
+            &:hover {
+                cursor: pointer;
+                color: $gold-hover;
+            }
+
+            &.visible {
+                display: none;
+            }
+        }
+
+        ul {
+            display: none;
+            height: 0;
+            padding: 0;
+            flex-direction: column;
+            opacity: 0;
+            transition: opacity 0.9s ease-in-out;
+
+            &.visible {
+                display: block;
+                opacity: 1;
+            }
+
+            li:nth-child(n) {
+                top: 0;
+                text-align: center;
+                padding: 150px 0 40px 0;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 641px) and (max-width: 1007px) {
+        /*Tablets*/
+
+        border-radius: 0;
+        justify-content: space-between;
+
+        &.scrolled {
+            height: 120px;
+        }
+
+        &.nav-visible {
+            background-color: black;
+            height: 100vh;
+            overflow-y: auto;
+            position: fixed;
+            transition: background-color 0.9s ease-in-out;
+        }
+
+        .logo {
+            position: absolute;
+            left: 2%;
+
+            img {
+                width: 150px;
+            }
+        }
+
+        .icon-menu {
+            position: absolute;
+            display: block;
+            color: $primary-color;
+            width: 100px;
+            height: 117px;
+            right: 2%;
+            transition: color 0.3s ease-in;
+
+            &:hover {
+                cursor: pointer;
+                color: $gold-hover;
+            }
+
+            &.visible {
+                display: none;
+            }
+        }
+
+        ul {
+            display: none;
+            height: 0;
+            flex-direction: column;
+            opacity: 0;
+            transition: opacity 0.9s ease-in-out;
+
+            &.visible {
+                display: block;
+                opacity: 1;
+            }
+
+            li:nth-child(n) {
+                top: 0;
+                text-align: center;
+                padding: 150px 0 40px 0;
+            }
+        }
+    }
+}

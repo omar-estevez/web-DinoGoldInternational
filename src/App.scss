@@ -1,0 +1,156 @@
+$primary-color: #e6b800;
+$secondary-color: #0074D9;
+$white-color: #F8F8F8;
+$black-color: #1a1a1a;
+$gold-hover: #FDD017;
+
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: 'Bangers', cursive;
+  font-weight: 500;
+  color: $black-color;
+}
+
+p,
+span {
+  font-family: "Quicksand", sans-serif;
+  color: $black-color;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p,
+span,
+a,
+li {
+  font-size: 20px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $gold-hover;
+}
+
+@media only screen and (max-width: 640px) {
+  /*Mobile phones*/
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20.8px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 12.8px;
+  }
+
+  h6 {
+    font-size: 11.2px;
+  }
+
+  p,
+  span,
+  a,
+  li {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
+  /*Tablets*/
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  p,
+  span,
+  a,
+  li {
+    font-size: 18px;
+  }
+}
