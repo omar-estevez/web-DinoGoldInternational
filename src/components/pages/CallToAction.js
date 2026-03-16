@@ -1,5 +1,5 @@
 import '../styles/CallToAction.scss';
-import video from '../assets/videos/washing_car.mp4';
+import video from '../assets/videos/washing_car_gen.mp4';
 
 const CallToAction = () => {
 
@@ -14,16 +14,20 @@ const CallToAction = () => {
         <>
             <section className='parallax'>
                 <div className="parallax-video">
-                    <video className="background-video" autoPlay loop muted>
+                    <video className="background-video" autoPlay loop muted playsinline>
                         <source src={video} type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div className="background"></div>
                 <div className="parallax-content">
-                    <h1>Welcome to Dino Gold International!</h1>
-                    <p><b>“While you rest, we work!”</b> Leave your car in our capable hands, and we’ll make it shine while you relax.</p>
-                    <button onClick={() => scrollToSection('services')}>Book Services</button>
+                    <h1>Premium Mobile Car Wash in Houston</h1>
+                    <p><b>We bring professional car wash service directly to your home or office in Houston</b>
+                        <br />✔ Mobile Service
+                        <br />✔ Houston Area
+                        <br />✔ Professional Equipment
+                    </p>
+                    <button onClick={() => scrollToSection('pricing')}>BOOK YOUR WASH</button>
                 </div>
             </section>
         </>

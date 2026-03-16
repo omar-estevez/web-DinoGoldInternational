@@ -1,95 +1,102 @@
-// import About from "./About";
-import About from "./About";
-import CallToAction from "./CallToAction";
-import Contact from "./Contact";
-import Pricing from "./Pricing";
-import Services from "./Services";
+import React, { lazy, Suspense } from 'react';
+
+const AboutComponent = lazy(() => import('./About'));
+const CallToActionComponent = lazy(() => import('./CallToAction'));
+const ContactComponent = lazy(() => import('./Contact'));
+const PricingComponent = lazy(() => import('./Pricing'));
+const ServicesComponent = lazy(() => import('./Services'));
 
 const Homepage = () => {
 
     const carType = [{
         'index': 0,
-        'name': 'BIKE',
-        'type': 'Kawasaki, Harley',
+        'name': 'SEDAN',
+        // 'type': 'Kawasaki, Harley',
         'price-basic': '$40',
-        'price-deluxe': '$80',
-        'price-premium': 'Soon'
+        'price-deluxe': '$60',
+        'price-premium': '$75'
     }, {
         'index': 1,
-        'name': '2 DOOR',
-        'type': 'Mustang, GT-R',
-        'price-basic': '$50',
-        'price-deluxe': '$100',
-        'price-premium': 'Soon'
+        'name': 'SUV',
+        // 'type': 'Mustang, GT-R',
+        'price-basic': '$45',
+        'price-deluxe': '$70',
+        'price-premium': '$85'
     }, {
         'index': 2,
-        'name': '4 DOOR',
-        'type': '5 Series, Tesla',
-        'price-basic': '$55',
-        'price-deluxe': '$110',
-        'price-premium': 'Soon'
-    }, {
-        'index': 3,
-        'name': 'SUV/TRUCK',
-        'type': 'RAM 1500, Cayenne',
-        'price-basic': '$60',
-        'price-deluxe': '$120',
-        'price-premium': 'Soon'
-    }, {
-        'index': 4,
-        'name': 'OVERSIZED',
-        'type': 'F250, RAM 3500',
-        'price-basic': '$65',
-        'price-deluxe': '$130',
-        'price-premium': 'Soon'
-    }, {
-        'index': 5,
-        'name': 'ANOTHER',
-        'type': 'Boats, Planes',
-        'price-basic': 'Contact Us',
-        'price-deluxe': 'Contact Us',
-        'price-premium': 'Soon'
+        'name': 'TRUCK / LARGE SUV',
+        // 'type': '5 Series, Tesla',
+        'price-basic': '$50',
+        'price-deluxe': '$80',
+        'price-premium': '$95'
     }];
 
     const cardsServices = [{
-        'title': 'Basic Wash',
+        'title': 'Exterior Wash',
         'list': [
-            'Foam Bath Pre-Soak',
-            'Clean Wheels',
-            'Gentle Hand Wash',
-            'Vacuum & Dust-Off',
-            'Tire Conditioner',
-            'Exterior & Interior Glass'
+            'Foam Wash',
+            'Pressure Rinse',
+            'Wheels & Rims Cleaning',
+            'Tire Shine',
+            'Microfiber Dry',
         ],
-        'price': '-'
+        'price': '-',
+        'buttonHref': "+1832XXXXXXX?body=Hi,%20I'd%20like%20to%20book%20the%20Exterior%20Wash%20service.%20Location%20in%20Houston:%20_____%20Preferred%20date%20%26%20time:%20_____",
     }, {
-        'title': 'Deluxe Wash',
+        'title': 'Wash + Vacuum',
         'list': [
-            'Foam Bath Pre-Soak',
-            'Deep Clean Wheels',
-            'Gentle Hand Wash',
-            'Deep Clean Emblems & Badge',
-            'Vacuum & Dust-Off',
-            'Deep Clean Carpets & Plastics',
-            'Tire Conditioner',
-            'Exterior & Interior Glass'
+            'Foam Wash',
+            'Wheels & Rims Cleaning',
+            'Tire Shine',
+            'Drying',
+            'Interior Vacuum',
+            'Quick Dashboard Wipe'
         ],
-        'price': '-'
+        'price': '-',
+        'buttonHref': "+1832XXXXXXX?body=Hi,%20I'd%20like%20to%20book%20the%20Wash%20%2B%20Vacuum%20service.%20Location%20in%20Houston:%20_____%20Preferred%20date%20%26%20time:%20_____",
     }, {
-        'title': 'Premium Ceramic Coating',
+        'title': 'Wash + Interior Quick Clean',
         'list': [
-            'SOON'
+            'Foam Wash',
+            'Wheels & Rims Cleaning',
+            'Tire Shine',
+            'Full Interior Vacuum',
+            'Dashboard Cleaning',
+            'Door & Panel Wipe Down',
+            'Interior & Exterior Windows',
         ],
-        'price': '-'
+        'price': '-',
+        'buttonHref': "+1832XXXXXXX?body=Hi,%20I'd%20like%20to%20book%20the%20Wash%20%2B%20Interior%20Quick%20Clean%20service.%20Location%20in%20Houston:%20_____%20Preferred%20date%20%26%20time:%20_____",
+    }];
+
+    const aditionalServices = [{
+        'title': 'Pet Hair Removal',
+        'price': '$20'
+    }, {
+        'title': 'Engine Bay Rinse',
+        'price': '$25'
+    }, {
+        'title': 'Heavy Dirt Fee',
+        'price': '$10 - 20'
     }];
 
     return (
         <>
-            <CallToAction/>
-            <Services/>
-            <Pricing carTypeList={carType} cardServicesList={cardsServices}/>
-            <About/>
-            <Contact/>
+            <Suspense fallback={<div>Loading...</div>}>
+                <CallToActionComponent />
+            </Suspense>
+            <Suspense fallback={<div>Loading...</div>}>
+                <ServicesComponent />
+            </Suspense>
+            <Suspense fallback={<div>Loading...</div>}>
+                <PricingComponent carTypeList={carType} cardServicesList={cardsServices} aditionalServicesList={aditionalServices} />
+            </Suspense>
+            <Suspense fallback={<div>Loading...</div>}>
+                <AboutComponent />
+            </Suspense>
+            <Suspense fallback={<div>Loading...</div>}>
+                <ContactComponent />
+            </Suspense>
         </>
     )
 }

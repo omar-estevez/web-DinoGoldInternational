@@ -55,11 +55,11 @@ const Nav = () => {
                     <img src={imageLogo} alt='Logo' />
                 </div>)}
                 <ul className={`${isElementVisible ? 'visible' : ''}`}>
-                    <li><h4 onClick={() => goToHome()}>Home</h4></li>
                     <li><h4 onClick={() => scrollToSection('about')}>About</h4></li>
-                    {isDesktop && (<li><img src={imageLogo} alt='Logo' /></li>)}
-                    <li><h4 onClick={() => scrollToSection('services')}>Prices</h4></li>
-                    <li><h4 onClick={() => scrollToSection('contact')}>Contact</h4></li>
+                    <li><h4 onClick={() => scrollToSection('services')}>Services</h4></li>
+                    {isDesktop && (<li><img src={imageLogo} alt='Logo' onClick={() => goToHome()} /></li>)}
+                    <li><h4 onClick={() => scrollToSection('pricing')}>PRICING</h4></li>
+                    <li><h4 onClick={() => scrollToSection('contact')}>BOOK</h4></li>
                 </ul>
                 {!isDesktop && (<TiThMenu className={`icon-menu ${isElementVisible ? 'visible' : ''}`} onClick={handleMenuClick} />)}
                 {!isDesktop && (<IoClose className={`icon-menu ${!isElementVisible ? 'visible' : ''}`} onClick={handleMenuClick} />)}

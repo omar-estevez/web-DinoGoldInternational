@@ -1,7 +1,7 @@
 @import '../../App';
 
 .contact {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
     background-color: $black-color;
     display: flex;
     flex-direction: column;
@@ -14,19 +14,28 @@
     .content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        padding: 30px 0;
+        padding: 30px 0 0 0;
 
         .image-container {
-            background-image: url('../assets/images/Fill_form.jpg');
-            background-size: 50% 100%;
-            background-attachment: fixed;
-            background-position-x: 0;
-            background-position-y: 0;
-            background-repeat: no-repeat;
+            background:
+                linear-gradient(to right, rgba(0, 0, 0, 0) 60%, $black-color 100%),
+                url('../assets/images/Exterior_wash.png') left center / cover no-repeat;
+
+            min-height: 420px;
         }
 
         .form-container {
             padding: 40px 0;
+        }
+
+        .text-container {
+            align-content: center;
+            padding: 40px 0;
+
+            p {
+                color: $primary-color;
+                line-height: 1.4;
+            }
         }
     }
 

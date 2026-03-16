@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#e6b800" />
+  <meta name="description" content="Dino Gold International, car detailing experts" />
+  <meta name="keywords"
+    content="car, car detailing, detailing, car wash, luxury car, dino gold international, Dino Gold International, DGI">
+  <meta property="og:title" content="Dino Gold International">
+  <meta property="og:description" content="Dino Gold International, car detailing experts">
+  <meta property="og:image" content="%PUBLIC_URL%/Logo_Detailing.png">
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/Logo_Detailing.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-    <!-- FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <!--
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -28,12 +32,35 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Dino Gold International</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-THNH39YG1Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-THNH39YG1Q');
+  </script>
+
+  <!-- Marcado JSON-LD generado por el Asistente para el marcado de datos estructurados de Google. -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Product",
+    "name": "Dino Gold International",
+    "image": "https://www.dinogoldinternational.com/static/media/Logo_Dino.d0b7f34f090260c72e54.png",
+    "description": "“While you rest, we work!”</B> Leave your car in our capable hands, and we’ll make it shine while you relax."
+  }
+  </script>
+
+  <title>Dino Gold International</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -43,5 +70,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>

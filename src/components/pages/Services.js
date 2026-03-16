@@ -1,34 +1,34 @@
 import React from 'react';
 import '../styles/Services.scss';
-import cardImageOne from '../assets/images/Exterior_detailing.png';
-import cardImageTwo from '../assets/images/Interior_detailing.png';
-import cardImageThree from '../assets/images/Paint_Correction.png';
-import cardImageFour from '../assets/images/Engine_cleaning.png';
+import cardImageOne from '../assets/images/Exterior_wash.png';
+import cardImageTwo from '../assets/images/Vacuum_clean.png';
+import cardImageThree from '../assets/images/Full_car_wash.png';
+import cardImageFour from '../assets/images/add_on.png';
 
 const Services = () => {
 
     const cards = [{
         'image': cardImageOne,
-        'title': 'Exterior Detailing',
-        'description': 'From hand washes to ceramic coatings, we protect your car’s beauty.',
+        'title': 'Mobile Exterior Car Wash',
+        'description': 'Professional mobile exterior car wash in Houston including foam wash, pressure rinse, wheel cleaning, tire shine, and microfiber drying to leave your vehicle spotless.',
     }, {
         'image': cardImageTwo,
-        'title': 'Interior Detailing',
-        'description': 'Say goodbye to dust, stains, and odors.',
+        'title': 'Interior Vacuum Cleaning',
+        'description': 'Interior vacuum cleaning service in Houston including seats, carpets, and floor mats to remove dirt, dust, and debris.',
     }, {
         'image': cardImageThree,
-        'title': 'Paint Correction',
-        'description': 'Revive faded paint and remove scratches.',
+        'title': 'Full Car Wash Service',
+        'description': 'Complete mobile car wash service in Houston including exterior wash, wheel cleaning, tire shine, interior vacuum, and dashboard wipe-down.',
     }, {
         'image': cardImageFour,
-        'title': 'Engine Bay Cleaning',
-        'description': 'Because even engines deserve a spa day.',
+        'title': 'Car Wash Add-On Services',
+        'description': 'Upgrade your mobile car wash in Houston with add-ons like pet hair removal, engine bay rinse, seat wipe-down, and extra cleaning for heavily dirty vehicles.',
     }]
 
     return (
         <>
             <section className='services' id='services'>
-                <h2>Our Services at a Glance</h2>
+                <h2>OUR MOBILE CAR WASH SERVICES IN HOUSTON</h2>
                 <div className='card-container'>
                     {
                         cards.map((card, index) =>
@@ -43,7 +43,7 @@ const Services = () => {
                         )
                     }
                 </div>
-                <p className='phrase'><b>“Dino Gold: Where Detailing Meets Excellence.”</b></p>
+                <p className='phrase'><b>“Dino Gold: Premium Mobile Car Wash Service in Houston”</b></p>
             </section>
         </>
     )

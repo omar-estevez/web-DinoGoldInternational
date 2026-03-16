@@ -1,5 +1,8 @@
 @import '../../App';
 
+$gold: #d4af37;
+$gold-dark: #b8962e;
+
 .pricing {
     background-color: #1a1a1a;
     padding: 50px 95px;
@@ -54,7 +57,7 @@
 
         .cards {
             width: 100%;
-            height: 100%;
+            // height: 100%;
             background-color: black;
             place-self: center;
             border-radius: 8px;
@@ -80,6 +83,7 @@
 
                     li {
                         margin: 12px 0;
+
                         // border-bottom: solid 1px $primary-color;
                         .check-icon {
                             color: $primary-color;
@@ -89,11 +93,16 @@
 
                 p {
                     color: $white-color;
-                    background: $primary-color;
+                    background: linear-gradient(135deg, $gold, $gold-dark);
                     font-weight: 500;
-                    font-size: 45px;
+                    font-size: 40px;
                     margin: 15px 0;
                     padding: 15px 0;
+                }
+
+                h6 {
+                    color: $primary-color;
+                    transition: color 0.3s ease-in;
                 }
             }
 
@@ -148,7 +157,7 @@
         padding: 50px 45px;
 
         .types-container {
-            ul{
+            ul {
                 li {
                     padding: 12px 30px;
                     width: 25%;
@@ -160,15 +169,25 @@
             padding: 60px 0px;
             grid-template-columns: repeat(1, 1fr);
             row-gap: 30px;
+
+            .cards {
+                .card-text {
+                    p {
+                        font-size: 25px;
+                    }
+                }
+            }
         }
     }
 
     @media only screen and (min-width: 641px) and (max-width: 1007px) {
+
         /*Tablets*/
+
         padding: 50px 45px;
 
         .types-container {
-            ul{
+            ul {
                 li {
                     padding: 12px 30px;
                 }
@@ -179,6 +198,15 @@
             padding: 40px 15px;
             grid-template-columns: repeat(2, 1fr);
             row-gap: 30px;
+
+            .cards {
+                .card-text {
+                    p {
+                        font-size: 25px;
+                    }
+                }
+            }
+
         }
     }
 }

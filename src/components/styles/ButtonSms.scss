@@ -1,0 +1,32 @@
+$gold: #d4af37;
+$gold-dark: #b8962e;
+$black: #0d0d0d;
+$white: #ffffff;
+
+.btn-book {
+    background: linear-gradient(135deg, $gold, $gold-dark);
+    color: $white;
+    border: none;
+    margin: 20px 0;
+    padding: 14px 28px;
+    font-size: 19px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: 2px;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+}

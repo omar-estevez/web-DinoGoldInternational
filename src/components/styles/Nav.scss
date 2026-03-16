@@ -32,6 +32,11 @@
 
             img {
                 width: 160px;
+
+                &:hover {
+                    cursor: pointer;
+                    filter: brightness(120%);
+                }
             }
 
             &:nth-child(1),
@@ -48,7 +53,7 @@
         }
     }
 
-    
+
     &.scrolled {
         background-color: black;
         transition: background-color 200ms linear;
