@@ -59,7 +59,7 @@ const Footer = () => {
                     <p>Mobile Car Wash in Houston, TX</p>
                     <h3>Contact</h3>
                     <p>
-                        📞 (832) XXX-XXXX
+                        📞 (832) 569-7359
                         📍 Houston, TX
                         💬 Text us to book
                     </p>
