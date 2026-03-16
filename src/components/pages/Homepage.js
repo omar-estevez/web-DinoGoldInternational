@@ -41,7 +41,7 @@ const Homepage = () => {
             'Microfiber Dry',
         ],
         'price': '-',
-        'buttonHref': "+1832XXXXXXX?body=Hi,%20I'd%20like%20to%20book%20the%20Exterior%20Wash%20service.%20Location%20in%20Houston:%20_____%20Preferred%20date%20%26%20time:%20_____",
+        'buttonHref': "?body=Hi,%20I'd%20like%20to%20book%20the%20Exterior%20Wash%20service.%20Location%20in%20Houston:%20_____%20Preferred%20date%20%26%20time:%20_____",
     }, {
         'title': 'Wash + Vacuum',
         'list': [
@@ -53,7 +53,7 @@ const Homepage = () => {
             'Quick Dashboard Wipe'
         ],
         'price': '-',
-        'buttonHref': "+1832XXXXXXX?body=Hi,%20I'd%20like%20to%20book%20the%20Wash%20%2B%20Vacuum%20service.%20Location%20in%20Houston:%20_____%20Preferred%20date%20%26%20time:%20_____",
+        'buttonHref': "?body=Hi,%20I'd%20like%20to%20book%20the%20Wash%20%2B%20Vacuum%20service.%20Location%20in%20Houston:%20_____%20Preferred%20date%20%26%20time:%20_____",
     }, {
         'title': 'Wash + Interior Quick Clean',
         'list': [
@@ -66,7 +66,7 @@ const Homepage = () => {
             'Interior & Exterior Windows',
         ],
         'price': '-',
-        'buttonHref': "+1832XXXXXXX?body=Hi,%20I'd%20like%20to%20book%20the%20Wash%20%2B%20Interior%20Quick%20Clean%20service.%20Location%20in%20Houston:%20_____%20Preferred%20date%20%26%20time:%20_____",
+        'buttonHref': "?body=Hi,%20I'd%20like%20to%20book%20the%20Wash%20%2B%20Interior%20Quick%20Clean%20service.%20Location%20in%20Houston:%20_____%20Preferred%20date%20%26%20time:%20_____",
     }];
 
     const aditionalServices = [{
