@@ -5,6 +5,7 @@ import myGa from './components/pages/MyGa';
 import Nav from './components/layout/Nav';
 import Main from './components/layout/Main';
 import Footer from './components/layout/Footer';
+import { ButtonWhatsapp } from './components/shared/ButtonWhatsapp';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Main />
         <Footer />
       </BrowserRouter>
+      <ButtonWhatsapp />
     </>
   );
 }

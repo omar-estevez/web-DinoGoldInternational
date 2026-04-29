@@ -22,15 +22,15 @@ const Footer = () => {
     };
 
     const handleIconClick = (type) => {
-        let url = '(https://www.dinogoldinternational.com)';
+        let url = '(https://www.dinogoldmobilecarwash.com)';
 
         switch (type) {
             case 'Facebook':
-                url = 'https://www.facebook.com/dinogoldinternational/';
+                url = 'https://www.facebook.com/dinogoldmobilecarwash/';
                 window.open(url, '_blank');
                 break;
             case 'Instagram':
-                url = 'https://www.instagram.com/dgi_detailing/';
+                url = 'https://www.instagram.com/dinogoldmobilecarwash/';
                 window.open(url, '_blank');
                 break;
             default:
