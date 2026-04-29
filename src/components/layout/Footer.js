@@ -42,7 +42,7 @@ const Footer = () => {
         <>
             <footer>
                 <div className='image'>
-                    <img src={image_footer} alt='Dino Gold International'></img>
+                    <img src={image_footer} alt='Dino Gold Mobile Car Wash'></img>
                 </div>
                 <div className='menu'>
                     <h3>QUICK LINKS</h3>
@@ -55,11 +55,11 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='social'>
-                    <h3>DGI Detailing</h3>
+                    <h3>Dino Gold Mobile Car Wash</h3>
                     <p>Mobile Car Wash in Houston, TX</p>
                     <h3>Contact</h3>
                     <p>
-                        📞 (832) 569-7359
+                        📞 (346) 479-4000
                         📍 Houston, TX
                         💬 Text us to book
                     </p>
@@ -82,7 +82,7 @@ const Footer = () => {
                 </div>
             </footer>
             <div className='copyright'>
-                <h5>© 2024 DGI Detailing. All Rights Reserved. </h5>
+                <h5 style={{ opacity: 0.2 }}>© 2026 Dino Gold Mobile Car Wash. All Rights Reserved. </h5>
             </div>
         </>
     )

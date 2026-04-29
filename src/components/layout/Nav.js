@@ -3,8 +3,7 @@ import imageLogo from '../assets/images/Logo_Dino.png';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from "react-router-dom";
 import { useMediaQuery } from 'react-responsive';
-import { TiThMenu } from "react-icons/ti";
-import { IoClose } from "react-icons/io5";
+import { IoClose, IoMenu } from "react-icons/io5";
 
 const Nav = () => {
 
@@ -61,7 +60,7 @@ const Nav = () => {
                     <li><h4 onClick={() => scrollToSection('pricing')}>PRICING</h4></li>
                     <li><h4 onClick={() => scrollToSection('contact')}>BOOK</h4></li>
                 </ul>
-                {!isDesktop && (<TiThMenu className={`icon-menu ${isElementVisible ? 'visible' : ''}`} onClick={handleMenuClick} />)}
+                {!isDesktop && (<IoMenu className={`icon-menu ${isElementVisible ? 'visible' : ''}`} onClick={handleMenuClick} />)}
                 {!isDesktop && (<IoClose className={`icon-menu ${!isElementVisible ? 'visible' : ''}`} onClick={handleMenuClick} />)}
             </nav>
         </>

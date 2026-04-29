@@ -15,7 +15,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className='col2'>
-                        <p>DGI Detailing was created with a simple mission: <br />
+                        <p>Dino Gold Mobile Car Wash was created with a simple mission: <br />
                             to provide professional mobile car wash services in Houston that are convenient, reliable, and affordable.</p>
                         <img src={image_customer} alt='Car customer DGI' loading="lazy" />
                     </div>

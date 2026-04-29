@@ -10,21 +10,21 @@ const Homepage = () => {
 
     const carType = [{
         'index': 0,
-        'name': 'SEDAN',
+        'name': 'SEDAN / COUPE',
         // 'type': 'Kawasaki, Harley',
         'price-basic': '$40',
         'price-deluxe': '$60',
         'price-premium': '$75'
     }, {
         'index': 1,
-        'name': 'SUV',
+        'name': 'SUV / TRUCK',
         // 'type': 'Mustang, GT-R',
         'price-basic': '$45',
         'price-deluxe': '$70',
         'price-premium': '$85'
     }, {
         'index': 2,
-        'name': 'TRUCK / LARGE SUV',
+        'name': 'LARGE SUV / 3 ROW',
         // 'type': '5 Series, Tesla',
         'price-basic': '$50',
         'price-deluxe': '$80',
@@ -74,10 +74,22 @@ const Homepage = () => {
         'price': '$20'
     }, {
         'title': 'Engine Bay Rinse',
+        'price': '$20 - $40'
+    }, {
+        'title': 'Heavy Dirt Fee / Mud Fee',
+        'price': '$10 - $20'
+    }, {
+        'title': 'Seat Surface Cleaning',
+        'price': '$10'
+    }, {
+        'title': 'Exterior Protection',
         'price': '$25'
     }, {
-        'title': 'Heavy Dirt Fee',
-        'price': '$10 - 20'
+        'title': 'Interior Protection',
+        'price': '$15'
+    }, {
+        'title': 'Iron Descontamination',
+        'price': '$25'
     }];
 
     return (
